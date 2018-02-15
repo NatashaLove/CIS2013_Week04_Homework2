@@ -117,41 +117,19 @@ int print_card_value(int card){
 }
 
 
-void pl_1st_game (int& player_total, int player_card) {
-	using namespace std;
-	int pl_total = rand() % 10 + 1; 
-	int pl_card = rand() % 10 + 1;
-	
-	cout << "your first card is " << pl_total << endl;
-
-	cout << "your second card is " << pl_card << endl;
-	cout << endl;
-	player_total = pl_total + pl_card;
-	cout << " The total value of your hand is " << player_total << endl;
-	
-	cout << endl;
-}
-void dl_1st_game (int& dealer_total) {
-	using namespace std;
-	int dl_total = rand() % 10 + 1; 
-	dealer_total = dl_total;
-	cout << "the dealer's card is " << dl_total << endl;
-
-	cout << endl;
-}
 void question (char& answer) {
-	using namespace std;
+	
 	cout << "Do you want to hit more? y/n" << endl;
 	cin >> answer;
 }
 void pl_game (int player_card, int& player_total) {
-	using namespace std;
+	
 	
 	player_total = player_total + player_card;
 	cout << " The total value of your hand is " << player_total << endl;
 }
 void pl_lose (int& player_total) {
-	using namespace std;
+	
 	if (player_total > 21) {
 
 			cout << "You lose!" << endl;
@@ -160,7 +138,7 @@ void pl_lose (int& player_total) {
 		
 }
 void pl_win (int& player_total) {
-	using namespace std;
+
 	if (player_total == 21) {
 
 			cout << "You win!" << endl;
@@ -169,14 +147,14 @@ void pl_win (int& player_total) {
 		
 }
 void dl_game (int dealer_card, int& dealer_total) {
-	using namespace std;
+	
 	dealer_total = dealer_total + dealer_card;
 	cout << " The total value of dealer's hand is " << dealer_total << endl;
 	
 	cout << endl;
 }
 void dl_lose (int& dealer_total) {
-	using namespace std;
+	
 	if (dealer_total > 21) {
 
 			cout << "Dealer loses!" << endl;
@@ -185,7 +163,7 @@ void dl_lose (int& dealer_total) {
 		
 }
 void dl_win (int& dealer_total) {
-	using namespace std;
+	
 	if (dealer_total == 21) {
 
 			cout << "Dealer wins!" << endl;
@@ -194,7 +172,7 @@ void dl_win (int& dealer_total) {
 		
 }
 void compare (int& player_total, int& dealer_total) {
-	using namespace std;
+	
 	if (player_total > dealer_total)
 		cout << " You win! " << endl;
 	else
