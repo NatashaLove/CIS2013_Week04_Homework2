@@ -4,19 +4,25 @@
 #include <stdlib.h>
 #include <time.h>
 using namespace std;
-
+// Greeting
 void hello();
+// Printing card value
 int print_card_value(int card);
-
-void pl_1st_game (int& player_total, int player_card);
-void dl_1st_game (int& dealer_total);
+// question to continue the game
 void question (char& answer);
+//Player's game and total value
 void pl_game (int player_card, int& player_total);
+//Player loses
 void pl_lose (int& player_total);
+// Player wins
 void pl_win (int& player_total);
+// Dealer's game and total value
 void dl_game (int dealer_card, int& dealer_total);
+// Dealer loses
 void dl_lose (int& dealer_total);
+// Dealer wins
 void dl_win (int& dealer_total);
+// Comparing points for the winner
 void compare (int& player_total, int& dealer_total);
 
 int main (){
